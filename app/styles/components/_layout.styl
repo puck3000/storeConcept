@@ -4,10 +4,14 @@
  **********************
 */
 
-
+body
+	+mobile()
+		margin: 1rem
 #main 
 	article
 		col(1/4, cycle:4, gutter: 5)
+		+mobile()
+			col(1/2, cycle:2, gutter: 5)
 		text-align: center
 		margin-bottom: 5%
 		
@@ -37,6 +41,7 @@ nav
 			&:hover
 				background-color: rgba(0,0,0,0.8)
 				color: white
+				font-weight: bold
 				
 
 // item Imgs and Captions
@@ -70,3 +75,5 @@ figure
 		text-align: center
 		background-color: rgba(0,0,0,0.8)
 		color: white
+		button
+			color: black
